@@ -1,16 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html>
 <head>
-
-    <title>FlexyCard HTML5 Responsive vCard Template - FlexyCodes Themes</title>
-
+    <title>Erics</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -25,6 +16,10 @@
     <!-- Credits: http://fortawesome.github.io/Font-Awesome/icons/ -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 
+    <!-- CSS | Colors -->
+    <link rel="stylesheet" type="text/css" href="css/colors/DarkBlue.css" id="colors-style"/>
+    <link rel="stylesheet" type="text/css" href="css/switcher.css"/>
+
     <!-- CSS | animate -->
     <!-- Credits: http://daneden.github.io/animate.css/ -->
     <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
@@ -33,9 +28,8 @@
     <!-- Credits: http://manos.malihu.gr/jquery-custom-content-scroller -->
     <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css"/>
 
-    <!-- CSS | Colors -->
-    <link rel="stylesheet" type="text/css" href="css/colors/DarkBlue.css" id="colors-style"/>
-    <link rel="stylesheet" type="text/css" href="css/switcher.css"/>
+    <!-- CSS | Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
     <!-- CSS | Style -->
     <!-- Credits: http://themeforest.net/user/FlexyCodes -->
@@ -45,8 +39,7 @@
     <!-- Credits: http://www.no-margin-for-errors.com/ -->
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"/>
 
-    <!-- CSS | Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
 
@@ -55,27 +48,40 @@
     <![endif]-->
 
     <style>
+
         @media only screen and (max-width: 991px) {
             .resp-vtabs .resp-tabs-container {
-                margin-left: 13px;
+                margin-left: 0px !important;
+            }
+
+            .resp-vtabs ul.resp-tabs-list {
+                width: 10%;
+                margin-right: 2px !important;
             }
         }
 
-        @media only screen and (min-width: 800px) and (max-width: 991px) {
-            .resp-vtabs .resp-tabs-container {
-                margin-left: 13px;
-                width: 89%;
+        @media only screen and (max-width: 800px) {
+
+            .widget-profil {
+                float: none !important;
             }
         }
+
+        .widget-profil {
+            float: left;
+        }
+
+        .resp-vtabs ul.resp-tabs-list {
+            float: right;
+        }
+
 
     </style>
+
 
 </head>
 
 <body>
-<div class="adcenter">
-<!--    <script src="http://www.cssmoban.com/include/new/ggad2_728x90.js"></script>-->
-</div>
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
@@ -87,8 +93,9 @@
     <div id="spinner"></div>
 </div>
 
+
 <!-- .slideshow -->
-<ul class="cb-slideshow" id="cb_slideshow" style="display:none">
+<ul class="cb-slideshow" id="cb_slideshow" style="display:block">
     <li><span>Image 01</span>
         <div></div>
     </li>
@@ -124,31 +131,29 @@
                     <div class="row">
 
                         <div class="col-md-3 widget-profil">
+
                             <div class="row">
 
                                 <!-- Profile Image -->
                                 <div class="col-lg-12 col-md-12 col-sm-3 col-xs-12 ">
-
-
                                     <div class="image-holder one" id="pic_prof_1" style="display:block">
-
-                                        <img class="head-image up circle" src="images/img/up.png" width="150"
+                                        <img class="head-image up circle" src="" width="150"
                                              height="150" alt=""/>
-                                        <img class="head-image up-left circle" src="images/img/upleft.png" width="150"
+                                        <img class="head-image up-left circle" src="g" width="150"
                                              height="150" alt=""/>
-                                        <img class="head-image left circle" src="images/img/left.png" width="150"
+                                        <img class="head-image left circle" src="" width="150"
                                              height="150" alt=""/>
-                                        <img class="head-image down-left circle" src="images/img/downleft.png"
+                                        <img class="head-image down-left circle" src=""
                                              width="150" height="150" alt=""/>
-                                        <img class="head-image down circle" src="images/img/down.png" width="150"
+                                        <img class="head-image down circle" src="" width="150"
                                              height="150" alt=""/>
-                                        <img class="head-image down-right circle" src="images/img/downright.png"
+                                        <img class="head-image down-right circle" src=""
                                              width="150" height="150" alt=""/>
-                                        <img class="head-image right circle" src="images/img/right.png" width="150"
+                                        <img class="head-image right circle" src="" width="150"
                                              height="150" alt=""/>
-                                        <img class="head-image up-right circle" src="images/img/upright.png" width="150"
+                                        <img class="head-image up-right circle" src="" width="150"
                                              height="150" alt=""/>
-                                        <img class="head-image front circle" src="images/img/front.png" width="150"
+                                        <img class="head-image front circle" src="" width="150"
                                              height="150" alt=""/>
 
                                     </div>
@@ -165,9 +170,9 @@
 
                                     <!-- Profile info -->
                                     <div id="profile_info">
-                                        <h1 id="name" class="transition-02">brown smith</h1>
-                                        <h4 class="line">GRAPHIC &amp; WEB DESIGNER</h4>
-                                        <h6><span class="fa fa-map-marker"></span> San Francisco , CA</h6>
+                                        <h1 id="name" class="transition-02">erics smith</h1>
+                                        <h4 class="line">Python开发</h4>
+                                        <h6><span class="fa fa-map-marker"></span> 中国上海市 </h6>
                                     </div>
                                     <!-- End Profile info -->
 
@@ -175,22 +180,16 @@
                                     <!-- Profile Description -->
                                     <div id="profile_desc">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac risus
-                                            nibh. Donec adipiscing luctus tur
+                                            坚持做自己！
                                         </p>
                                         <p>
-                                            More Templates <a href="http://www.cssmoban.com/" target="_blank"
-                                                              title="模板之家">模板之家</a> - Collect from <a
-                                                href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+                                            家人在的地方，就是我的家！
                                         </p>
                                     </div>
                                     <!-- End Profile Description -->
-
-
                                     <!-- Name -->
                                     <div id="profile_social">
-                                        <h6>My Social Profiles</h6>
-
+                                        <h6>我的社交资料</h6>
                                         <a href="#"><i class="fa fa-facebook"></i></a>
                                         <a href="#"><i class="fa fa-twitter"></i></a>
                                         <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -214,36 +213,37 @@
                                 <ul class="resp-tabs-list">
                                     <li class="tabs-profile hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a profile"
                                         data-tab-name="profile">
-                                        <span class="tite-list">profile</span>
+                                        <span class="tite-list">个人资料</span>
                                         <i class="fa fa-user icon_menu icon_menu_active"></i>
                                     </li>
 
                                     <li class="tabs-resume hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"
                                         data-tab-name="resume">
-                                        <span class="tite-list">resume</span>
+                                        <span class="tite-list">简历</span>
                                         <i class="fa fa-tasks icon_menu"></i>
                                     </li>
 
                                     <li class="tabs-portfolio hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"
                                         data-tab-name="portfolio">
-                                        <span class="tite-list">portfolio</span>
+                                        <span class="tite-list">作品</span>
                                         <i class="fa fa-briefcase icon_menu"></i>
                                     </li>
 
                                     <li class="tabs-blog hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"
                                         data-tab-name="blog">
-                                        <span class="tite-list">blog</span>
+                                        <span class="tite-list">生活</span>
                                         <i class="fa fa-bullhorn icon_menu"></i>
                                     </li>
 
                                     <li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"
                                         data-tab-name="contact" style="margin-bottom: 48px !important;">
-                                        <span class="tite-list">contact</span>
+                                        <span class="tite-list">留言</span>
                                         <i class="fa fa-envelope icon_menu"></i>
                                     </li>
 
                                     <a href="#" id="print"><i class="fa fa-print icon_print"></i> </a>
                                     <a href="#" id="downlowd"><i class="fa fa-download icon_print"></i> </a>
+
                                 </ul>
                                 <!-- /resp-tabs-list -->
 
@@ -254,58 +254,55 @@
                                     <!-- profile -->
                                     <div id="profile" class="content_2">
                                         <!-- .title -->
-                                        <h1 class="h-bloc">Profile - About Me</h1>
+                                        <h1 class="h-bloc">个人资料 - 关于我</h1>
 
                                         <div class="row top-p">
                                             <div class="col-md-6 profile-l">
-
                                                 <!--About me-->
                                                 <div class="title_content">
-                                                    <div class="text_content">brown smith</div>
+                                                    <div class="text_content">erics smith</div>
                                                     <div class="clear"></div>
                                                 </div>
-
                                                 <ul class="about">
-
                                                     <li>
                                                         <i class="glyphicon glyphicon-user"></i>
-                                                        <label>Name</label>
-                                                        <span class="value">Brown Smith</span>
+                                                        <label>姓名</label>
+                                                        <span class="value">奈何</span>
                                                         <div class="clear"></div>
                                                     </li>
 
                                                     <li>
                                                         <i class="glyphicon glyphicon-calendar"></i>
-                                                        <label>Date of birth</label>
-                                                        <span class="value">March 18, 1988</span>
+                                                        <label>出生日期</label>
+                                                        <span class="value">1996年11月22日</span>
                                                         <div class="clear"></div>
                                                     </li>
 
                                                     <li>
                                                         <i class="glyphicon glyphicon-map-marker"></i>
-                                                        <label>Adress</label>
-                                                        <span class="value">San Francisco , CA</span>
+                                                        <label>地址</label>
+                                                        <span class="value">中国上海市</span>
                                                         <div class="clear"></div>
                                                     </li>
 
                                                     <li>
                                                         <i class="glyphicon glyphicon-envelope"></i>
-                                                        <label>Email</label>
-                                                        <span class="value">brown.smith@gmail.com</span>
+                                                        <label>电子邮件</label>
+                                                        <span class="value">erics1996@yeah.net</span>
                                                         <div class="clear"></div>
                                                     </li>
 
                                                     <li>
                                                         <i class="glyphicon glyphicon-phone"></i>
-                                                        <label>Phone</label>
-                                                        <span class="value">+123 (21) 1234-5678</span>
+                                                        <label>电话</label>
+                                                        <span class="value">18512152004</span>
                                                         <div class="clear"></div>
                                                     </li>
 
                                                     <li>
                                                         <i class="glyphicon glyphicon-globe"></i>
-                                                        <label>Website</label>
-                                                        <span class="value"><a href="#" target="_blank">www.brown-smith.com</a></span>
+                                                        <label>网站</label>
+                                                        <span class="value"><a href="#" target="_blank">www.erics1996.com</a></span>
                                                         <div class="clear"></div>
                                                     </li>
 
@@ -314,17 +311,11 @@
 
                                                 <p style="margin-bottom:20px">
                                                     <i class="fa fa-quote-left"></i>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec
-                                                    nulla sagittis, scelerisque mi vitae, congue turpis. Lorem ipsum
-                                                    dolor sit amet, consectetur adipiscing elit. Etiam nec nulla
-                                                    sagittis, scelerisque mi vitae, congue turpis.
+                                                    坚持做自己！
                                                 </p>
-
                                                 <p style="margin-bottom:20px">
                                                     <i class="fa fa-quote-left"></i>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec
-                                                    nulla sagittis, scelerisque mi vitae, congue turpis.
-
+                                                    家人在的地方，就是我的家！
                                                 </p>
 
                                             </div>
@@ -385,8 +376,7 @@
                                                 </div>
                                             </div>
                                         </div><!-- End Services -->
-                                        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/">免费模板</a>
-                                        </div>
+
 
                                         <div class="clear"></div>
                                         <div class="border-list"></div>
@@ -890,9 +880,6 @@
                                                 </div>
                                             </div>
 
-                                            <div class="copyrights">Collect from <a
-                                                    href="http://www.cssmoban.com/">免费模板</a></div>
-
 
                                             <div style="clear: both"></div>
                                         </div>
@@ -913,12 +900,12 @@
                                             <ul id="filters" class="clearfix">
                                                 <li><span class="filter active"
                                                           data-filter="catWeb catGraphic catMotion logo">All</span></li>
-                                                <li><span class="filter" data-filter="catWeb">Web Design</span></li>
-                                                <li><span class="filter" data-filter="catGraphic">Graphic Design</span>
+                                                <li><span class="filter" data-filter="catWeb">Flask</span></li>
+                                                <li><span class="filter" data-filter="catGraphic">Django</span>
                                                 </li>
-                                                <li><span class="filter" data-filter="catMotion">Motion Graphic</span>
+                                                <li><span class="filter" data-filter="catMotion">Django Rest framework</span>
                                                 </li>
-                                                <li><span class="filter" data-filter="logo">Logo</span></li>
+                                                <li><span class="filter" data-filter="logo">Python Script</span></li>
                                             </ul>
                                             <!-- /#filters -->
 
@@ -2968,15 +2955,13 @@
 <div id="custumize-style">
     <h2>Style Selector<a href="#" class="switcher"><i class="fa fa-cogs icon-switcher"></i></a></h2>
     <div>
-        <h3>Theme Color</h3>
+        <h3>主题色彩</h3>
         <ul class="colors-style" id="color1">
-
+            <li><a href="" class="red"></a></li>
             <li><a href="#" class="gray"></a></li>
             <li><a href="#" class="green"></a></li>
             <li><a href="#" class="blue"></a></li>
-            <li><a href="#" class="red"></a></li>
             <li><a href="#" class="yellow"></a></li>
-
             <li><a href="#" class="DarkBlue"></a></li>
             <li><a href="#" class="orange"></a></li>
             <li><a href="#" class="rose"></a></li>
@@ -3006,17 +2991,17 @@
         <div id="show">
             <div class="clean-check" style="padding-left: 30px;">
 
-                <input type="radio" id="pb1" name="page_builder" value="http://demo.flexy-codes.com/FlexyVcard"
-                       checked/>
+                <input type="radio" id="pb1" name="page_builder" value="index.html"/>
                 <label for="pb1"><span></span>Style 1</label>
 
-                <input type="radio" id="pb2" name="page_builder" value="page-builder-2.html"/>
+                <input type="radio" id="pb2" name="page_builder" value="index.html"/>
                 <label for="pb2"><span></span>Style 2</label>
 
-                <input type="radio" id="pb3" name="page_builder" value="page-builder-3.html"/>
+                <input type="radio" id="pb3" name="page_builder"
+                       value="index.html" checked/>
                 <label for="pb3"><span></span>Style 3</label>
 
-                <input type="radio" id="pb4" name="page_builder" value="page-builder-4.html"/>
+                <input type="radio" id="pb4" name="page_builder" value="index.html"/>
                 <label for="pb4"><span></span>Style 4</label>
             </div>
         </div>
@@ -3041,28 +3026,19 @@
                     <option value="fadeInUp">fadeInUp</option>
                 </optgroup>
             </select>
-
         </div>
-
-        <h3 class="layouts" style="padding-top:5px">Background Style</h3>
+        <h3 class="layouts" style="padding-top:5px">背景样式</h3>
         <div id="show">
-
             <div class="clean-check">
-
-                <input type="radio" id="s1" name="layout" value="bg_color" checked="checked"/>
-                <label for="s1"><span></span>Color</label>
-
-                <input type="radio" id="s2" name="layout" value="bg_slider"/>
-                <label for="s2"><span></span>Slider</label>
-
+                <input type="radio" id="s1" name="layout" value="bg_color" />
+                <label for="s1"><span></span>颜色</label>
+                <input type="radio" id="s2" name="layout" value="bg_slider" checked="checked"/>
+                <label for="s2"><span></span>滑杆</label>
             </div>
-
         </div>
-
     </div>
-
     <div>
-        <h3>Background Color</h3>
+        <h3>背景颜色</h3>
         <ul class="colors-style bgsolid" id="bgsolid">
             <li><a href="#" class="gray-bg"></a></li>
             <li><a href="#" class="green-bg"></a></li>
@@ -3073,7 +3049,7 @@
     </div>
 
     <div>
-        <h3>Background Image</h3>
+        <h3>背景图片</h3>
         <ul class="colors-style bg" id="bg">
             <li><a href="#" class="bg1"></a></li>
             <li><a href="#" class="bg2"></a></li>
@@ -3086,24 +3062,20 @@
     <div id="button-reset"><a href="#" class="button color blue boxed">Reset</a></div>
 </div>
 <!-- End Switcher -->
+<!-- End Switcher -->
 
 
 <!-- jquery | jQuery 1.11.0 -->
 <!-- Credits: http://jquery.com -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 
-<!-- Js | bootstrap -->
-<!-- Credits: http://getbootstrap.com/ -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
 <!-- Js | jquery.cycle -->
 <!-- Credits: https://github.com/malsup/cycle2 -->
 <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
 
-<!-- jquery | rotate and portfolio -->
-<!-- Credits: http://jquery.com -->
-<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-<script type="text/javascript" src="js/HeadImage.js"></script>
+<!-- Js | bootstrap -->
+<!-- Credits: http://getbootstrap.com/ -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <!-- Js | easyResponsiveTabs -->
 <!-- Credits: http://webtrendset.com/demo/easy-responsive-tabs/Index.html -->
@@ -3121,10 +3093,6 @@
 <!-- Credits: http://manos.malihu.gr/jquery-custom-content-scroller -->
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
-<!-- jquery | prettyPhoto -->
-<!-- Credits: http://www.no-margin-for-errors.com/ -->
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-
 <!-- Js | gmaps -->
 <!-- Credits: http://maps.google.com/maps/api/js?sensor=true-->
 
@@ -3133,6 +3101,16 @@
 <!-- Js | Js -->
 <!-- Credits: http://themeforest.net/user/FlexyCodes -->
 <script type="text/javascript" src="js/main.js"></script>
+
+<!-- jquery | rotate and portfolio -->
+<!-- Credits: http://jquery.com -->
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript" src="js/HeadImage.js"></script>
+
+<!-- jquery | prettyPhoto -->
+<!-- Credits: http://www.no-margin-for-errors.com/ -->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+
 
 <!-- code js for image rotate -->
 <script type="text/javascript">
